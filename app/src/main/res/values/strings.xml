@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BucketList</string>
+    <string name="welcome">Добро пожаловать!</string>
+    <string name="text_welcome">Добро пожаловать!</string>
+    <string name="text_howru">Как прошёл ваш день?</string>
+    <string name="image_icon">icon</string>
+    <string name="text_wish_places">Места, которые я хочу посетить:</string>
+    <string name="text_places">places</string>
+    <string name="text_ekb">г. Екатеринбург</string>
+</resources>
