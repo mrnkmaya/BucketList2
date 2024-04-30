@@ -4,82 +4,169 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EED8B3"
+    android:background="#EEF4ED"
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView"
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
-        android:layout_height="83dp"
-        android:background="#812F3A"
-        android:padding="25dp"
-        android:text="@string/txt_travels"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="24sp"
+        android:layout_height="63dp"
+        android:background="#B4C1A4"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
     <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_marginTop="80dp"
-        android:orientation="horizontal"
+        android:id="@+id/linearLayout2"
+        android:layout_width="414dp"
+        android:layout_height="650dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/textView">
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
-        <android.widget.Button
-            android:id="@+id/button"
-            android:layout_width="122dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/shape_border_stroke"
-            android:text="Мои путешествия"
-            android:textAlignment="center"
-            android:textAllCaps="false"
-            android:textSize="14sp" />
 
-        <android.widget.Button
-            android:layout_width="120dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/shape_border_stroke"
-            android:text="Популярные места"
-            android:textAllCaps="false"
-            android:textSize="14sp" />
+        <LinearLayout
+            android:layout_width="390dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_rounded_stroke">
 
-        <android.widget.Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/shape_border_stroke"
-            android:text="Редкие места"
-            android:textAllCaps="false"
-            android:textSize="14sp" />
+            <ImageView
+                android:layout_width="88dp"
+                android:layout_height="85dp"
+                android:layout_marginStart="17dp"
+                android:src="@drawable/cathedral_vasilia"
+                android:layout_margin="6dp">
+
+            </ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="390dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_rounded_stroke" >
+
+            <ImageView
+                android:layout_width="86dp"
+                android:layout_height="85dp"
+                android:layout_margin="6dp"
+                android:contentDescription="@string/txt_cathedral_isaak"
+                android:src="@drawable/cathedral_isaak" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="390dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_rounded_stroke" >
+            <ImageView
+                android:layout_width="86dp"
+                android:layout_height="85dp"
+                android:src="@drawable/kremlin_2"
+                android:layout_margin="6dp"
+                android:layout_marginStart="17dp">
+
+            </ImageView>
+        </LinearLayout>
+    
+
+        <LinearLayout
+            android:layout_width="390dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_rounded_stroke">
+            <ImageView
+                android:layout_width="86dp"
+                android:layout_height="85dp"
+                android:src="@drawable/old_railway"
+                android:layout_margin="6dp"
+                android:layout_marginStart="17dp">
+
+            </ImageView>
+        </LinearLayout>
+
     </LinearLayout>
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="190dp"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/house"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageButton
+            android:layout_width="47dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/kremlin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </ImageButton>
+
+        <ImageButton
+            android:layout_width="37dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/nevyansk_town"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+        </ImageButton>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:backgroundTint="#BBC3B2"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linearLayout">
-        <android.widget.Button
-            android:layout_width="190dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/shape_border_stroke"
-            android:text="Мои запланированные путешествия"
-            android:textAllCaps="false"
-            android:textSize="14sp">
-        </android.widget.Button>
-        <android.widget.Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/shape_border_stroke"
-            android:text="Архив путешествий"
-            android:textAllCaps="false"
-            android:textSize="14sp">
-        </android.widget.Button>
-    </LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="5dp"
+        android:contentDescription="@string/ic_search"
+        android:src="@drawable/ic_lupa"
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="13dp">
 
+    </ImageView>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="1dp"
+        android:src="@drawable/icon"
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp">
+
+    </ImageView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

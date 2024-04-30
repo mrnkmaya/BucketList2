@@ -8,4 +8,12 @@
     <string name="text_places">places</string>
     <string name="text_ekb">г. Екатеринбург</string>
     <string name="txt_travels">Путешествуем вместе</string>
+    <string name="icon">иконка приложения</string>
+    <string name="search">поиск</string>
+    <string name="ic_home">"иконка дома "</string>
+    <string name="ic_kremlin">иконка кремля</string>
+    <string name="ic_nevyansk_town">невьянская башня</string>
+    <string name="ic_search">поиск</string>
+    <string name="txt_cathedral">собор Василия Блаженного</string>
+    <string name="txt_cathedral_isaak">Исаакевский собор</string>
 </resources>
