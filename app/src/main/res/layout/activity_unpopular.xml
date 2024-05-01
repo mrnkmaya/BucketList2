@@ -94,7 +94,7 @@
             android:background="@drawable/shape_rounded_stroke">
 
             <ImageView
-                android:id="@+id/img_cathedral_isaak"
+                android:id="@+id/img_lake_baikal"
                 android:layout_width="86dp"
                 android:layout_height="85dp"
                 android:layout_margin="6dp"

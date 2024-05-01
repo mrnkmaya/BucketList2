@@ -22,4 +22,6 @@
     <string name="txt_town">невьянская башня</string>
     <string name="txt_icon">иконка приложения</string>
     <string name="txt_triangle">треугольник</string>
+    <string name="txt_lake_baikal">озеро Байкал</string>
+    <string name="txt_write">начните писать...</string>
 </resources>
