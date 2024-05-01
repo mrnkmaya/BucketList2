@@ -10,10 +10,16 @@
     <string name="txt_travels">Путешествуем вместе</string>
     <string name="icon">иконка приложения</string>
     <string name="search">поиск</string>
-    <string name="ic_home">"иконка дома "</string>
-    <string name="ic_kremlin">иконка кремля</string>
+    <string name="txt_home">"иконка дома "</string>
+    <string name="txt_kremlin">иконка кремля</string>
     <string name="ic_nevyansk_town">невьянская башня</string>
     <string name="ic_search">поиск</string>
     <string name="txt_cathedral">собор Василия Блаженного</string>
     <string name="txt_cathedral_isaak">Исаакевский собор</string>
+    <string name="txt_old_railway">старый вокзал</string>
+    <string name="txt_heart">сердце</string>
+    <string name="txt_gray_heart">серое сердце</string>
+    <string name="txt_town">невьянская башня</string>
+    <string name="txt_icon">иконка приложения</string>
+    <string name="txt_triangle">треугольник</string>
 </resources>
