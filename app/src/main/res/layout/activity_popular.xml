@@ -87,163 +87,6 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@id/infoblock"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_margin="10dp"
-            android:background="@drawable/shape_rounded_stroke">
-
-            <ImageView
-                android:id="@+id/img_lake_baikal"
-                android:layout_width="86dp"
-                android:layout_height="85dp"
-                android:layout_margin="6dp"
-                android:contentDescription="@string/txt_cathedral_isaak"
-                android:src="@drawable/cathedral_isaak"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
-            <ImageButton
-                android:id="@id/btn_heart"
-                android:layout_width="16dp"
-                android:layout_height="17dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginBottom="80dp"
-                android:background="@drawable/icon_heart"
-                android:contentDescription="@string/txt_heart"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent">
-
-            </ImageButton>
-
-            <ImageButton
-                android:id="@id/btn_gray_heart"
-                android:layout_width="16dp"
-                android:layout_height="17dp"
-                android:layout_marginBottom="80dp"
-                android:layout_marginEnd="5dp"
-                android:background="@drawable/icon_gray_heart"
-                android:contentDescription="@string/txt_gray_heart"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
-            <ImageButton
-                android:id="@id/btn_triangle"
-                android:layout_width="21dp"
-                android:layout_height="23dp"
-                android:background="@drawable/triangle"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginBottom="11dp"
-                android:layout_marginEnd="5dp"
-                android:contentDescription="@string/txt_triangle"/>
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@id/infoblock"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_margin="10dp"
-            android:background="@drawable/shape_rounded_stroke">
-
-            <ImageView
-                android:id="@+id/img_kremlin"
-                android:layout_width="86dp"
-                android:layout_height="85dp"
-                android:layout_margin="6dp"
-                android:src="@drawable/kremlin_2"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                android:contentDescription="@string/txt_kremlin"/>
-            <ImageButton
-                android:id="@id/btn_heart"
-                android:layout_width="16dp"
-                android:layout_height="17dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginBottom="80dp"
-                android:background="@drawable/icon_heart"
-                android:contentDescription="@string/txt_heart"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
-
-            <ImageButton
-                android:id="@id/btn_gray_heart"
-                android:layout_width="16dp"
-                android:layout_height="17dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginBottom="80dp"
-                android:background="@drawable/icon_gray_heart"
-                android:contentDescription="@string/txt_gray_heart"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
-            <ImageButton
-                android:id="@id/btn_triangle"
-                android:layout_width="21dp"
-                android:layout_height="23dp"
-                android:background="@drawable/triangle"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginBottom="11dp"
-                android:layout_marginEnd="5dp"
-                android:contentDescription="@string/txt_triangle"/>
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@id/infoblock"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_margin="10dp"
-            android:background="@drawable/shape_rounded_stroke">
-
-            <ImageView
-                android:id="@+id/img_old_railway"
-                android:layout_width="86dp"
-                android:layout_height="85dp"
-                android:layout_margin="6dp"
-                android:layout_marginStart="4dp"
-                android:layout_marginBottom="4dp"
-                android:src="@drawable/old_railway"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                android:contentDescription="@string/txt_old_railway">
-
-            </ImageView>
-
-            <ImageButton
-                android:id="@id/btn_heart"
-                android:layout_width="16dp"
-                android:layout_height="17dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginBottom="80dp"
-                android:background="@drawable/icon_heart"
-                android:contentDescription="@string/txt_heart"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent">
-
-            </ImageButton>
-
-            <ImageButton
-                android:id="@+id/btn_gray_heart4"
-                android:layout_width="16dp"
-                android:layout_height="17dp"
-                android:layout_marginBottom="80dp"
-                android:layout_marginEnd="5dp"
-                android:background="@drawable/icon_gray_heart"
-                android:contentDescription="@string/txt_gray_heart"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
-            <ImageButton
-                android:id="@id/btn_triangle"
-                android:layout_width="21dp"
-                android:layout_height="23dp"
-                android:background="@drawable/triangle"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginBottom="11dp"
-                android:layout_marginEnd="5dp"
-                android:contentDescription="@string/txt_triangle"/>
-        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>
 
@@ -258,12 +101,12 @@
             android:id="@+id/btn_house"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginStart="160dp"
+            android:layout_marginStart="180dp"
             android:layout_marginBottom="14dp"
             android:background="@drawable/house"
+            android:contentDescription="@string/txt_home"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:contentDescription="@string/txt_home"/>
+            app:layout_constraintStart_toStartOf="parent" />
 
         <ImageButton
             android:id="@+id/btn_kremlin"
