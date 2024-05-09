@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-
-<androidx.constraintlayout.widget.ConstraintLayout
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EEF4ED"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="MainActivity"
     android:orientation="vertical">
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout_header"
         android:layout_width="match_parent"
@@ -38,73 +32,83 @@
         app:layout_constraintVertical_bias="0.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/infoblock"
+            android:id="@id/infoblock"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="330dp"
             android:layout_margin="10dp"
             android:background="@drawable/shape_rounded_stroke">
 
             <ImageView
-                android:id="@+id/imd_lake_baikal"
-                android:layout_width="88dp"
+                android:id="@+id/img_lake_baikal"
+                android:layout_width="86dp"
                 android:layout_height="85dp"
                 android:layout_margin="6dp"
-                android:background="@drawable/lake_baikal"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:contentDescription="@string/txt_lake_baikal"
+                android:src="@drawable/lake_baikal"
                 app:layout_constraintStart_toStartOf="parent"
-                android:contentDescription="@string/txt_lake_baikal" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/heading_baikal"
+                android:id="@+id/txt_ic_baikal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintBottom_toTopOf="@+id/txt_sd_baikal"
                 android:layout_marginStart="100dp"
                 android:layout_marginEnd="30dp"
                 android:text="@string/txt_lake_baikal"
-                android:textSize="15sp">
-
-            </TextView>
-
-            <TextView
-                android:id="@+id/sd_baikal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="30dp"
-                android:layout_marginEnd="30dp"
-                android:layout_marginStart="100dp"
-                android:text="@string/txt_smalldescription_baikal"
-                android:textSize="11sp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
             </TextView>
 
+            <TextView
+                android:id="@+id/txt_small_baikal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_smalldescription_baikal"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="30dp"/>
+
+            <TextView
+                android:id="@+id/md_baikal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="100dp"
+                android:text="@string/txt_moredescription_baikal"
+                android:textSize="11sp"
+                android:layout_marginStart="5dp">
+
+            </TextView>
+
+
             <ImageButton
-                android:id="@+id/btn_heart"
+                android:id="@id/btn_heart"
                 android:layout_width="16dp"
                 android:layout_height="17dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginBottom="80dp"
                 android:background="@drawable/icon_heart"
-                android:contentDescription="@string/txt_heart"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent">
-            </ImageButton>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="5dp" />
 
             <ImageButton
-                android:id="@+id/btn_gray_heart"
+                android:id="@id/btn_gray_heart"
                 android:layout_width="16dp"
                 android:layout_height="17dp"
-                android:layout_marginBottom="80dp"
-                android:layout_marginEnd="5dp"
                 android:background="@drawable/icon_gray_heart"
-                android:contentDescription="@string/txt_gray_heart"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="5dp"/>
 
             <ImageButton
-                android:id="@+id/btn_triangle"
+                android:id="@id/btn_triangle"
                 android:layout_width="21dp"
                 android:layout_height="23dp"
                 android:background="@drawable/triangle"
@@ -112,28 +116,25 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginBottom="11dp"
                 android:layout_marginEnd="5dp"
-                android:contentDescription="@string/txt_triangle">
-
-            </ImageButton>
+                android:contentDescription="@string/txt_triangle"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@id/infoblock"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="330dp"
             android:layout_margin="10dp"
             android:background="@drawable/shape_rounded_stroke">
 
             <ImageView
-                android:id="@+id/img_isaak"
+                android:id="@+id/img_cathedral_isaak"
                 android:layout_width="86dp"
                 android:layout_height="85dp"
                 android:layout_margin="6dp"
-                android:contentDescription="@string/txt_cathedral_isaak"
                 android:src="@drawable/cathedral_isaak"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/heading_isaak"
@@ -141,49 +142,59 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="100dp"
                 android:layout_marginEnd="30dp"
-                app:layout_constraintBottom_toTopOf="@+id/txt_sd_isaak"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
                 android:text="@string/txt_cathedral_isaak"
-                android:textSize="15sp">
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
             </TextView>
 
             <TextView
                 android:id="@+id/sd_isaak"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="100dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginEnd="30dp"
-                app:layout_constraintTop_toTopOf="parent"
+                android:layout_height="wrap_content"
                 android:text="@string/txt_smalldescription_isaak"
-                android:textSize="11sp">
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="30dp"/>
+
+            <TextView
+                android:id="@+id/md_isaak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="100dp"
+                android:text="@string/txt_moredescription_isaak"
+                android:textSize="11sp"
+                android:layout_marginStart="5dp">
 
             </TextView>
+
+
             <ImageButton
                 android:id="@id/btn_heart"
                 android:layout_width="16dp"
                 android:layout_height="17dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginBottom="80dp"
                 android:background="@drawable/icon_heart"
-                android:contentDescription="@string/txt_heart"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent">
-
-            </ImageButton>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="5dp" />
 
             <ImageButton
                 android:id="@id/btn_gray_heart"
                 android:layout_width="16dp"
                 android:layout_height="17dp"
-                android:layout_marginBottom="80dp"
-                android:layout_marginEnd="5dp"
                 android:background="@drawable/icon_gray_heart"
-                android:contentDescription="@string/txt_gray_heart"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="5dp"/>
+
             <ImageButton
                 android:id="@id/btn_triangle"
                 android:layout_width="21dp"
@@ -200,67 +211,76 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@id/infoblock"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="330dp"
             android:layout_margin="10dp"
             android:background="@drawable/shape_rounded_stroke">
 
             <ImageView
-                android:id="@+id/img_kremlin"
                 android:layout_width="86dp"
                 android:layout_height="85dp"
                 android:layout_margin="6dp"
-                android:src="@drawable/kremlin_2"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                android:contentDescription="@string/txt_kremlin"/>
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/heading_kremlin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
                 android:layout_marginStart="100dp"
                 android:layout_marginEnd="30dp"
-                android:text="@string/txt_kremlin">
+                android:text="@string/txt_kremlin"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
             </TextView>
 
             <TextView
                 android:id="@+id/sd_kremlin"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="100dp"
-                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
                 android:text="@string/txt_smalldescription_kremlin"
                 android:textSize="11sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginEnd="30dp">
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="30dp"/>
+
+            <TextView
+                android:id="@+id/md_kremlin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="100dp"
+                android:text="@string/txt_moredescription_kremlin"
+                android:textSize="11sp"
+                android:layout_marginStart="5dp">
 
             </TextView>
+
 
             <ImageButton
                 android:id="@id/btn_heart"
                 android:layout_width="16dp"
                 android:layout_height="17dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginBottom="80dp"
                 android:background="@drawable/icon_heart"
-                android:contentDescription="@string/txt_heart"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="5dp" />
 
             <ImageButton
                 android:id="@id/btn_gray_heart"
                 android:layout_width="16dp"
                 android:layout_height="17dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginBottom="80dp"
                 android:background="@drawable/icon_gray_heart"
-                android:contentDescription="@string/txt_gray_heart"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="5dp"/>
+
             <ImageButton
                 android:id="@id/btn_triangle"
                 android:layout_width="21dp"
@@ -271,13 +291,13 @@
                 android:layout_marginBottom="11dp"
                 android:layout_marginEnd="5dp"
                 android:contentDescription="@string/txt_triangle"/>
-        </androidx.constraintlayout.widget.ConstraintLayout>
 
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@id/infoblock"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="330dp"
             android:layout_margin="10dp"
             android:background="@drawable/shape_rounded_stroke">
 
@@ -285,60 +305,68 @@
                 android:layout_width="86dp"
                 android:layout_height="85dp"
                 android:layout_margin="6dp"
-                android:layout_marginStart="4dp"
-                android:layout_marginBottom="4dp"
-                android:src="@drawable/kremlin_rostov"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                android:contentDescription="@string/txt_old_railway">
+                app:layout_constraintTop_toTopOf="parent" />
 
-            </ImageView>
             <TextView
                 android:id="@+id/heading_rostov_kremlin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
                 android:layout_marginStart="100dp"
                 android:layout_marginEnd="30dp"
-                android:text="@string/txt_rostov_kremlin">
+                android:text="@string/txt_rostov_kremlin"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
             </TextView>
 
             <TextView
                 android:id="@+id/sd_rostov"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="100dp"
-                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_smalldescription_rostov"
                 android:textSize="11sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginEnd="30dp"
-                android:text="@string/txt_smalldescription_rostov"/>
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="30dp"/>
+
+            <TextView
+                android:id="@+id/md_rostov"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="100dp"
+                android:text="@string/txt_moredescription_rostov"
+                android:textSize="11sp"
+                android:layout_marginStart="5dp">
+
+            </TextView>
+
 
             <ImageButton
                 android:id="@id/btn_heart"
                 android:layout_width="16dp"
                 android:layout_height="17dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginBottom="80dp"
                 android:background="@drawable/icon_heart"
-                android:contentDescription="@string/txt_heart"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent">
-
-            </ImageButton>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="5dp" />
 
             <ImageButton
-                android:id="@+id/btn_gray_heart4"
+                android:id="@id/btn_gray_heart"
                 android:layout_width="16dp"
                 android:layout_height="17dp"
-                android:layout_marginBottom="80dp"
-                android:layout_marginEnd="5dp"
                 android:background="@drawable/icon_gray_heart"
-                android:contentDescription="@string/txt_gray_heart"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="5dp"/>
+
             <ImageButton
                 android:id="@id/btn_triangle"
                 android:layout_width="21dp"
@@ -349,12 +377,13 @@
                 android:layout_marginBottom="11dp"
                 android:layout_marginEnd="5dp"
                 android:contentDescription="@string/txt_triangle"/>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-      <androidx.constraintlayout.widget.ConstraintLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@id/infoblock"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="330dp"
             android:layout_margin="10dp"
             android:background="@drawable/shape_rounded_stroke">
 
@@ -362,8 +391,8 @@
                 android:layout_width="86dp"
                 android:layout_height="85dp"
                 android:layout_margin="6dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/heading_peterhof"
@@ -371,48 +400,59 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="100dp"
                 android:layout_marginEnd="30dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/txt_peterhof"
                 android:textSize="15sp"
-                android:text="@string/txt_peterhof">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
             </TextView>
 
             <TextView
                 android:id="@+id/sd_peterhof"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="100dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginEnd="30dp"
-                app:layout_constraintTop_toTopOf="parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_smalldescription_peterhof"
                 android:textSize="11sp"
-                android:text="@string/txt_smalldescription_peterhof">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="30dp"/>
+
+            <TextView
+                android:id="@+id/md_peterhof"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="100dp"
+                android:text="@string/txt_moredescription_peterhof"
+                android:textSize="11sp"
+                android:layout_marginStart="5dp">
 
             </TextView>
+
+
             <ImageButton
                 android:id="@id/btn_heart"
                 android:layout_width="16dp"
                 android:layout_height="17dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginBottom="80dp"
                 android:background="@drawable/icon_heart"
-                android:contentDescription="@string/txt_heart"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent">
-
-            </ImageButton>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="5dp" />
 
             <ImageButton
                 android:id="@id/btn_gray_heart"
                 android:layout_width="16dp"
                 android:layout_height="17dp"
-                android:layout_marginBottom="80dp"
-                android:layout_marginEnd="5dp"
                 android:background="@drawable/icon_gray_heart"
-                android:contentDescription="@string/txt_gray_heart"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="5dp"/>
+
             <ImageButton
                 android:id="@id/btn_triangle"
                 android:layout_width="21dp"
@@ -429,7 +469,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@id/infoblock"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="330dp"
             android:layout_margin="10dp"
             android:background="@drawable/shape_rounded_stroke">
 
@@ -437,8 +477,8 @@
                 android:layout_width="86dp"
                 android:layout_height="85dp"
                 android:layout_margin="6dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/heading_novgorod_kremlin"
@@ -446,48 +486,59 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="100dp"
                 android:layout_marginEnd="30dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/txt_novgorod_kremlin"
                 android:textSize="15sp"
-                android:text="@string/txt_novgorod_kremlin">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
             </TextView>
 
             <TextView
                 android:id="@+id/sd_novgorod_kremlin"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="100dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginEnd="30dp"
-                app:layout_constraintTop_toTopOf="parent"
+                android:layout_height="wrap_content"
                 android:text="@string/txt_smalldescription_novgorod_kremlin"
-                android:textSize="11sp">
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="30dp"/>
+
+            <TextView
+                android:id="@+id/md_novgorod_kremlin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="100dp"
+                android:text="@string/txt_moredescription_novgorod_kremlin"
+                android:textSize="11sp"
+                android:layout_marginStart="5dp">
 
             </TextView>
+
+
             <ImageButton
                 android:id="@id/btn_heart"
                 android:layout_width="16dp"
                 android:layout_height="17dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginBottom="80dp"
                 android:background="@drawable/icon_heart"
-                android:contentDescription="@string/txt_heart"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent">
-
-            </ImageButton>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="5dp" />
 
             <ImageButton
                 android:id="@id/btn_gray_heart"
                 android:layout_width="16dp"
                 android:layout_height="17dp"
-                android:layout_marginBottom="80dp"
-                android:layout_marginEnd="5dp"
                 android:background="@drawable/icon_gray_heart"
-                android:contentDescription="@string/txt_gray_heart"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="5dp"/>
+
             <ImageButton
                 android:id="@id/btn_triangle"
                 android:layout_width="21dp"
@@ -500,10 +551,11 @@
                 android:contentDescription="@string/txt_triangle"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@id/infoblock"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="330dp"
             android:layout_margin="10dp"
             android:background="@drawable/shape_rounded_stroke">
 
@@ -511,8 +563,8 @@
                 android:layout_width="86dp"
                 android:layout_height="85dp"
                 android:layout_margin="6dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/heading_motherland_mother"
@@ -520,48 +572,59 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="100dp"
                 android:layout_marginEnd="30dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/txt_novgorod_kremlin"
                 android:textSize="15sp"
-                android:text="@string/txt_motherland_mother">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
             </TextView>
 
             <TextView
                 android:id="@+id/sd_motherland_mother"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="100dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginEnd="30dp"
-                app:layout_constraintTop_toTopOf="parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_smalldescription_novgorod_kremlin"
                 android:textSize="11sp"
-                android:text="@string/txt_smalldescription_motherland_mother">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="30dp"/>
+
+            <TextView
+                android:id="@+id/md_motherland_mother"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="100dp"
+                android:text="@string/txt_moredescription_motherland_mother"
+                android:textSize="11sp"
+                android:layout_marginStart="5dp">
 
             </TextView>
+
+
             <ImageButton
                 android:id="@id/btn_heart"
                 android:layout_width="16dp"
                 android:layout_height="17dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginBottom="80dp"
                 android:background="@drawable/icon_heart"
-                android:contentDescription="@string/txt_heart"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent">
-
-            </ImageButton>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="5dp" />
 
             <ImageButton
                 android:id="@id/btn_gray_heart"
                 android:layout_width="16dp"
                 android:layout_height="17dp"
-                android:layout_marginBottom="80dp"
-                android:layout_marginEnd="5dp"
                 android:background="@drawable/icon_gray_heart"
-                android:contentDescription="@string/txt_gray_heart"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="5dp"/>
+
             <ImageButton
                 android:id="@id/btn_triangle"
                 android:layout_width="21dp"
@@ -574,10 +637,11 @@
                 android:contentDescription="@string/txt_triangle"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@id/infoblock"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="330dp"
             android:layout_margin="10dp"
             android:background="@drawable/shape_rounded_stroke">
 
@@ -585,8 +649,8 @@
                 android:layout_width="86dp"
                 android:layout_height="85dp"
                 android:layout_margin="6dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/heading_pskov_kremlin"
@@ -594,48 +658,59 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="100dp"
                 android:layout_marginEnd="30dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/txt_pskov_kremlin"
                 android:textSize="15sp"
-                android:text="@string/txt_pskov_kremlin">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
             </TextView>
 
             <TextView
                 android:id="@+id/sd_pskov_kremlin"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="100dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginEnd="30dp"
-                app:layout_constraintTop_toTopOf="parent"
+                android:layout_height="wrap_content"
                 android:text="@string/txt_smalldescription_pskov"
-                android:textSize="11sp">
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="30dp"/>
+
+            <TextView
+                android:id="@+id/md_pskov"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="100dp"
+                android:text="@string/txt_moredescription_pskov_kremlin"
+                android:textSize="11sp"
+                android:layout_marginStart="5dp">
 
             </TextView>
+
+
             <ImageButton
                 android:id="@id/btn_heart"
                 android:layout_width="16dp"
                 android:layout_height="17dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginBottom="80dp"
                 android:background="@drawable/icon_heart"
-                android:contentDescription="@string/txt_heart"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent">
-
-            </ImageButton>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="5dp" />
 
             <ImageButton
                 android:id="@id/btn_gray_heart"
                 android:layout_width="16dp"
                 android:layout_height="17dp"
-                android:layout_marginBottom="80dp"
-                android:layout_marginEnd="5dp"
                 android:background="@drawable/icon_gray_heart"
-                android:contentDescription="@string/txt_gray_heart"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="5dp"/>
+
             <ImageButton
                 android:id="@id/btn_triangle"
                 android:layout_width="21dp"
@@ -648,10 +723,12 @@
                 android:contentDescription="@string/txt_triangle"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@id/infoblock"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="330dp"
             android:layout_margin="10dp"
             android:background="@drawable/shape_rounded_stroke">
 
@@ -659,8 +736,8 @@
                 android:layout_width="86dp"
                 android:layout_height="85dp"
                 android:layout_margin="6dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/heading_trinity_lavra"
@@ -668,48 +745,59 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="100dp"
                 android:layout_marginEnd="30dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/txt_trinity_sergius_lavra"
                 android:textSize="15sp"
-                android:text="@string/txt_trinity_sergius_lavra">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
             </TextView>
 
             <TextView
                 android:id="@+id/sd_trinity_lavra"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="100dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginEnd="30dp"
-                app:layout_constraintTop_toTopOf="parent"
+                android:layout_height="wrap_content"
                 android:text="@string/txt_smalldescription_trinity_sergiuslavra"
-                android:textSize="11sp">
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="30dp"/>
+
+            <TextView
+                android:id="@+id/md_trininty_lavra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="100dp"
+                android:text="@string/txt_moredescription_trinity_lavra"
+                android:textSize="11sp"
+                android:layout_marginStart="5dp">
 
             </TextView>
+
+
             <ImageButton
                 android:id="@id/btn_heart"
                 android:layout_width="16dp"
                 android:layout_height="17dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginBottom="80dp"
                 android:background="@drawable/icon_heart"
-                android:contentDescription="@string/txt_heart"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent">
-
-            </ImageButton>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="5dp" />
 
             <ImageButton
                 android:id="@id/btn_gray_heart"
                 android:layout_width="16dp"
                 android:layout_height="17dp"
-                android:layout_marginBottom="80dp"
-                android:layout_marginEnd="5dp"
                 android:background="@drawable/icon_gray_heart"
-                android:contentDescription="@string/txt_gray_heart"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="5dp"/>
+
             <ImageButton
                 android:id="@id/btn_triangle"
                 android:layout_width="21dp"
@@ -722,10 +810,11 @@
                 android:contentDescription="@string/txt_triangle"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@id/infoblock"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="330dp"
             android:layout_margin="10dp"
             android:background="@drawable/shape_rounded_stroke">
 
@@ -733,8 +822,8 @@
                 android:layout_width="86dp"
                 android:layout_height="85dp"
                 android:layout_margin="6dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/heading_kizhi"
@@ -742,48 +831,59 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="100dp"
                 android:layout_marginEnd="30dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/txt_kizhi"
                 android:textSize="15sp"
-                android:text="@string/txt_kizhi">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
             </TextView>
 
             <TextView
                 android:id="@+id/sd_kizhi"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="100dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginEnd="30dp"
-                app:layout_constraintTop_toTopOf="parent"
+                android:layout_height="wrap_content"
                 android:text="@string/txt_smalldescription_kizhi"
-                android:textSize="11sp">
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="30dp"/>
+
+            <TextView
+                android:id="@+id/md_kizhi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="100dp"
+                android:text="@string/txt_moredescription_kizhi"
+                android:textSize="11sp"
+                android:layout_marginStart="5dp">
 
             </TextView>
+
+
             <ImageButton
                 android:id="@id/btn_heart"
                 android:layout_width="16dp"
                 android:layout_height="17dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginBottom="80dp"
                 android:background="@drawable/icon_heart"
-                android:contentDescription="@string/txt_heart"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent">
-
-            </ImageButton>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="5dp" />
 
             <ImageButton
                 android:id="@id/btn_gray_heart"
                 android:layout_width="16dp"
                 android:layout_height="17dp"
-                android:layout_marginBottom="80dp"
-                android:layout_marginEnd="5dp"
                 android:background="@drawable/icon_gray_heart"
-                android:contentDescription="@string/txt_gray_heart"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="5dp"/>
+
             <ImageButton
                 android:id="@id/btn_triangle"
                 android:layout_width="21dp"
@@ -796,6 +896,7 @@
                 android:contentDescription="@string/txt_triangle"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
     </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -809,12 +910,12 @@
             android:id="@+id/btn_house"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginStart="180dp"
+            android:layout_marginStart="160dp"
             android:layout_marginBottom="14dp"
             android:background="@drawable/house"
-            android:contentDescription="@string/txt_home"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            android:contentDescription="@string/txt_home"/>
 
         <ImageButton
             android:id="@+id/btn_kremlin"
@@ -878,7 +979,4 @@
     </ImageView>
 
 
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>
